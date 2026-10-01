@@ -22,9 +22,3 @@ Transaksi dan stok memakai database transaction. Migrasi tambahan tersedia pada 
 ## Isi repository
 
 Repository berisi kode sumber dan aset presentasi. Konfigurasi produksi, database operasional, backup, data pelanggan, session, dan upload privat tidak disertakan.
-
-## Pemilik
-
-Muhammad Rizqi Maulana (rizqimaulana04).
-
-Pengembangan dilakukan dengan bantuan Codex.
