@@ -1,0 +1,2 @@
+<?php require_once __DIR__.'/../config/auth.php';require_role('owner');header('Content-Type: application/json');$from=$_GET['from']??date('Y-m-d',strtotime('-6 days'));$to=$_GET['to']??date('Y-m-d');$s=db()->prepare("SELECT DATE(created_at) date,SUM(total) total,COUNT(*) transactions,SUM(profit) profit FROM transactions WHERE status='paid' AND DATE(created_at) BETWEEN ? AND ? GROUP BY DATE(created_at) ORDER BY date");$s->execute([$from,$to]);echo json_encode(['data'=>$s->fetchAll()],JSON_UNESCAPED_UNICODE);
+

@@ -1,0 +1,1 @@
+</section></main><script>window.APP_BASE='<?=BASE_URL?>';window.CSRF='<?=csrf_token()?>';</script><script src="<?=BASE_URL?>/assets/js/app.js"></script><script src="<?=BASE_URL?>/assets/js/ui-feedback.js?v=1"></script><script src="<?=BASE_URL?>/assets/js/orders.js?v=2"></script><?php if(!empty($extraScript)) echo $extraScript; ?></body></html>

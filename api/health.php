@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/../config/auth.php';require_login();header('Content-Type: application/json');try{db()->query('SELECT 1');echo json_encode(['ok'=>true]);}catch(Throwable){http_response_code(503);echo json_encode(['ok'=>false]);}

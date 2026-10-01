@@ -1,0 +1,2 @@
+<?php
+require_once __DIR__.'/../config/auth.php';require_role('kasir');header('Content-Type: application/json');$id=(int)($_GET['id']??0);$s=db()->prepare('SELECT t.id,t.name,t.price,t.stock FROM toppings t JOIN product_toppings pt ON pt.topping_id=t.id JOIN products p ON p.id=pt.product_id WHERE pt.product_id=? AND p.branch_id=? AND t.branch_id=? AND t.is_available=1 AND t.stock>0 ORDER BY t.name');$s->execute([$id,branch_id(),branch_id()]);echo json_encode(['toppings'=>$s->fetchAll()],JSON_UNESCAPED_UNICODE);

@@ -1,0 +1,29 @@
+.brand{gap:10px;padding-left:2px}.brand-logo{width:52px;height:52px;object-fit:contain;flex:none;filter:drop-shadow(0 5px 9px rgba(67,38,19,.13))}.brand>div{line-height:1.25}.brand>div>strong{font-size:14px;display:block;color:#4b2a17}.login-logo{width:min(245px,82%);aspect-ratio:1;object-fit:contain;margin:0 auto 24px;filter:drop-shadow(0 16px 25px rgba(64,37,18,.16))}.login-art{align-items:flex-start}.login-art .login-logo{align-self:center}@media(max-width:600px){.login-logo{width:150px;margin-bottom:17px}.login-art{text-align:center;align-items:center}.login-art p{max-width:310px}.brand-logo{width:48px;height:48px}}
+
+/* Tema kopi: mengikuti warna logo sekaligus mempertahankan kontras antarmuka. */
+:root{
+  --primary:#704326;
+  --primary-dark:#4b2a17;
+  --soft:#f6eadb;
+  --bg:#faf7f2;
+  --card:#fffdfa;
+  --text:#2d211a;
+  --muted:#74685f;
+  --line:#e9dfd4;
+  --shadow:0 10px 30px rgba(75,42,23,.08);
+}
+.login-body{background:radial-gradient(circle at 50% 15%,#f4e2ca,transparent 38%),var(--bg)}
+.login-art{background:linear-gradient(155deg,#fffaf3,#ead0ae)}
+.user-card{border-color:#ead8c3}
+.product-thumb{background:linear-gradient(145deg,var(--soft),#fffaf4)}
+.qty button{border-color:#d9b998}
+.cart-fab{box-shadow:0 12px 30px rgba(112,67,38,.3)}
+.coffee-mark{box-shadow:0 18px 35px rgba(112,67,38,.24)}
+.welcome-banner{background:linear-gradient(120deg,#f8f2e9 0%,#f1dfca 100%)}
+.welcome-icon{box-shadow:0 8px 20px rgba(112,67,38,.13)}
+.sales-wallet{background:linear-gradient(135deg,#fffdfa 0%,#f8eee2 58%,#efe0cd 100%);border-color:#eadfd3}
+.wallet-stats{background:rgba(248,238,226,.78);border-top-color:#e9dac9}
+.dashboard-menu i{color:var(--primary)}
+.payment-total-card{background:linear-gradient(135deg,#f6eadb,#eee0cf)}
+.dialog-icon.danger,.ui-dialog[data-type=danger] .ui-dialog-icon{background:#fff0ed;color:#bd3327}
+.connection-status{position:fixed;right:16px;bottom:16px;z-index:190;display:flex;align-items:center;gap:8px;padding:9px 13px;border-radius:20px;background:#fff;color:#6d625a;box-shadow:var(--shadow);font-size:12px}.connection-status span{width:9px;height:9px;border-radius:50%;background:#d39b26}.connection-status.connected span{background:#159651}.connection-status.disconnected{background:#fff0ed;color:#9e2d25}.connection-status.disconnected span{background:#c63b30}.connection-status.compact b{display:none}.topping-edit-row{grid-template-columns:1.4fr repeat(4,1fr) auto!important}@media(max-width:700px){.topping-edit-row{grid-template-columns:1fr 1fr!important}.topping-edit-row .icon-btn{grid-column:2}.connection-status{bottom:84px}}
